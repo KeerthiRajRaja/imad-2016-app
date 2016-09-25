@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    articleone={
+    articleone:{
         title:'article-one | Keerthiraj',
         heading:'Article one',
         date:'sep 2016',
@@ -16,7 +16,7 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`
     },
-    articletwo={title:'article-two | Keerthiraj',
+    articletwo:{title:'article-two | Keerthiraj',
         heading:'Article two',
         date:'sep 2016',
         content:`<p>
@@ -24,7 +24,7 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`},
-    aticlethree={title:'article-three | Keerthiraj',
+    aticlethree:{title:'article-three | Keerthiraj',
         heading:'Article three',
         date:'sep 2016',
         content:`<p>
@@ -32,7 +32,8 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`}
-    function ctreateTemplate(data){
+};
+    function createTemplate(data){
         var title=data.title;
         var heading=data.heading;
         var date=data.date;
