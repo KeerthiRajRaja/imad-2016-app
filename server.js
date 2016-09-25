@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    articleone:{
+    'article-one':{
         title:'article-one | Keerthiraj',
         heading:'Article one',
         date:'sep 2016',
@@ -16,7 +16,7 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`
     },
-    articletwo:{title:'article-two | Keerthiraj',
+    'article-two':{title:'article-two | Keerthiraj',
         heading:'Article two',
         date:'sep 2016',
         content:`<p>
@@ -24,7 +24,7 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`},
-    aticlethree:{title:'article-three | Keerthiraj',
+    'aticle-three':{title:'article-three | Keerthiraj',
         heading:'Article three',
         date:'sep 2016',
         content:`<p>
@@ -74,8 +74,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req, res){
-   res.send(createTemlate(articleone));
+app.get('/:articlename', function(req, res){
+    var articlename=req.params.articlename;
+   res.send(createTemlate(articles[articlename]));
 });
 
 app.get('/article-two', function(req, res){
