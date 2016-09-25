@@ -5,50 +5,67 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
-    tite:'rticle-one | Keerthiraj',
-    heading:'Article one',
-    date:'sep 2016',
-    content:`<p>
-                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
-                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
-                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
-                </p>`
-};
-function ctreateTemplate(data){
-    var title=data.title;
-    var heading=data.heading;
-    var date=data.date;
-    var content=data.content;
-
-
-var htmlTemplate=`<html>
-    <head>
-        <title>
-            ${title}
-        </title>
-        <meta name="viewport" content="width=device-width,initial-sacle=1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-            <div>
-                <a href="/">HOME</a>
+var articles={
+    articleone={
+        title:'article-one | Keerthiraj',
+        heading:'Article one',
+        date:'sep 2016',
+        content:`<p>
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                    </p>`
+    },
+    articletwo={title:'article-two | Keerthiraj',
+        heading:'Article two',
+        date:'sep 2016',
+        content:`<p>
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                    </p>`},
+    aticlethree={title:'article-three | Keerthiraj',
+        heading:'Article three',
+        date:'sep 2016',
+        content:`<p>
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                        This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                    </p>`}
+    function ctreateTemplate(data){
+        var title=data.title;
+        var heading=data.heading;
+        var date=data.date;
+        var content=data.content;
+    
+    
+    var htmlTemplate=`<html>
+        <head>
+            <title>
+                ${title}
+            </title>
+            <meta name="viewport" content="width=device-width,initial-sacle=1"/>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div class="container">
+                <div>
+                    <a href="/">HOME</a>
+                </div>
+                <hr/>
+                <h3>
+                    ${heading}
+                </h3>
+                <div>
+                    ${date}
+                </div>
+                <div>
+                    ${content}
+                </div>
             </div>
-            <hr/>
-            <h3>
-                ${heading}
-            </h3>
-            <div>
-                ${date}
-            </div>
-            <div>
-                ${content}
-            </div>
-        </div>
-    </body>
-</html>
-`;
+        </body>
+    </html>
+    `;
 return htmplTemplate;
 }
 
