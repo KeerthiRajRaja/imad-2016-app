@@ -67,7 +67,7 @@ var articles={
         </body>
     </html>
     `;
-return htmplTemplate;
+return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
