@@ -5,6 +5,19 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var conten={
+    tite:'rticle-one | Keerthiraj',
+    heading:'Article one',
+    date:'sep 2016',
+    content:`<p>
+                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                    This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
+                </p>`
+};
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
