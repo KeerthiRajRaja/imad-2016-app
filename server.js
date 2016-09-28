@@ -16,7 +16,8 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                     </p>`
     },
-    'article-two':{title:'article-two | Keerthiraj',
+    'article-two':{
+        title:'article-two | Keerthiraj',
         heading:'Article two',
         date:'sep 2016',
         content:`<p>
@@ -26,7 +27,8 @@ var articles={
                     </p>`
         
     },
-    'article-three':{title:'article-three | Keerthiraj',
+    'article-three':{
+        title:'article-three | Keerthiraj',
         heading:'Article three',
         date:'sep 2016',
         content:`<p>
