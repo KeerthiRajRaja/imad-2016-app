@@ -23,7 +23,9 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
-                    </p>`},
+                    </p>`
+        
+    },
     'article-three':{title:'article-three | Keerthiraj',
         heading:'Article three',
         date:'sep 2016',
@@ -31,12 +33,14 @@ var articles={
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
                         This is the content for my webapp.This is the content for my webapp.This is the content for my webapp.
-                    </p>`}
+                    </p>`
+        
+    }
 };
     function createTemplate(data){
         var title=data.title;
-        var heading=data.heading;
         var date=data.date;
+        var heading=data.heading;
         var content=data.content;
     
     
