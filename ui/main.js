@@ -18,14 +18,16 @@ button.onclick=function(){
     
         }
     }
-    //not yet ddone
+    //not yet done
       
   };
   
   //make the request
-  request.open('GET','http://keerthirajraja.imad.hasura-app/counter',true);
+  request.open('GET','http://keerthirajraja.imad.hasura-app.io/',true);
   request.send(null);
   
 };
 //submit name
-var name=document.getElementById('name');
+var nameInput=document.getElementById('name');
+var name=nameInput.value;
+var submit=document.getElementById('submit_btn');
