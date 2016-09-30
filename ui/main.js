@@ -31,7 +31,6 @@ submit.onclick=function(){
     //make request to the server and send the name
   var request=new XMLHttpRequest();
   
-  
   //capture the responce and share it in a variable
   
   request.onreadystatechange=function(){
