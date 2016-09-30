@@ -15,15 +15,12 @@ button.onclick=function(){
         var counter=request.responseText;
         var span=document.getElementById('count');
         span.innerHTML=counter.toString();
-    
         }
     }
     //not yet done
-      
   };
-  
   //make the request
-  request.open('GET','http://keerthirajraja.imad.hasura-app.io/',true);
+  request.open('GET','http://keerthirajraja.imad.hasura-app.io/counter',true);
   request.send(null);
   
 };
