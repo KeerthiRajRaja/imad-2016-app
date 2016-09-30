@@ -27,3 +27,5 @@ button.onclick=function(){
   request.send(null);
   
 };
+//submit name
+var name=document.getElementById('name');
