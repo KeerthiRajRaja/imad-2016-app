@@ -9,6 +9,7 @@ button.onclick=function(){
   //capture the responce and share it in a variable
   
   request.onreadystatechange=function(){
+      console.log("request working");
     if(request.readystate===XMLHttpRequest.DONE){
         //take some action
         if(request.status===200){
