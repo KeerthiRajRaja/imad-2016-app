@@ -38,7 +38,7 @@ submit.onclick=function(){
   //capture the responce and share it in a variable
   
   request.onreadystatechange=function(){
-    if(request.readystate===XMLHttpRequest.DONE){
+    //if(request.readystate===XMLHttpRequest.DONE){
         //take some action
         if(request.status===200){
           //capture a list of names and render it as a list
