@@ -10,7 +10,7 @@ button.onclick=function(){
   
   request.onreadystatechange=function(){
       console.log("request working");
-    if(request.readystate===XMLHttpRequest.DONE){
+      //if(request.readystate===XMLHttpRequest.DONE){
         //take some action
         console.log("ready state working");
         if(request.status===200){
@@ -20,7 +20,7 @@ button.onclick=function(){
         var span=document.getElementById('count');
         span.innerHTML=counter.toString();
         }
-    }
+    //}
     //not yet done
   };
   //make the request
