@@ -4,7 +4,7 @@ var button=document.getElementById('counter');
 button.onclick=function(){
   //make a request to the counter endpoint
   var request=new XMLHttpRequest();
-  
+  console.log("Button is clicked");
   
   //capture the responce and share it in a variable
   
