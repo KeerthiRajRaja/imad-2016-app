@@ -12,7 +12,9 @@ button.onclick=function(){
       console.log("request working");
     if(request.readystate===XMLHttpRequest.DONE){
         //take some action
+        console.log("ready state working");
         if(request.status===200){
+            
         var counter=request.responseText;
         console.log("response text",counter);
         var span=document.getElementById('count');
